@@ -48,6 +48,15 @@ class Search extends AbstractOperation
     }
 
     /**
+     * Set the sort order
+     *
+     * @param $sort_order
+     */
+    public function setSortOrder($sort_order){
+        $this->parameter['Sort'] = $sort_order;
+    }
+
+    /**
      * Sets the keywords
      *
      * @param string $keywords

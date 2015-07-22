@@ -51,9 +51,13 @@ class Search extends AbstractOperation
      * Set the sort order
      *
      * @param $sort_order
+     *
+     * @return \ApaiIO\Operations\Search
      */
     public function setSortOrder($sort_order){
         $this->parameter['Sort'] = $sort_order;
+
+        return $this;
     }
 
     /**
